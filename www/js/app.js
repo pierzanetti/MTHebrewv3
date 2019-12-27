@@ -64,12 +64,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
-  
+
 // Così vocaboli ha il proprio tab-vocaboli
   .state('tab.vocaboli', {
       url: '/vocaboli',
       views: {
-       'tab-vocaboli': {
+       'tab-dizionario': {
           templateUrl: 'templates/tab-vocaboli.html',
          controller: 'VocaboliCtrl'
         }
@@ -80,7 +80,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     .state('tab.vocabolo-detail', {
       url: '/vocaboli/:vocaboloId',
       views: {
-        'tab-vocaboli': {
+        'tab-dizionario': {
           templateUrl: 'templates/vocabolo-detail.html',
           controller: 'VocaboloDetailCtrl'
         }

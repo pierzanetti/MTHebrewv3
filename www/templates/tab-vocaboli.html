@@ -4,20 +4,24 @@
     <ion-header-bar class="bar-subheader bar-stable item-input-inset">
       <label class="item-input-wrapper">
         <i class="icon ion-search placeholder-icon"></i>
-        <input type="search" placeholder="" ng-model="filter">
+        <input type="search" placeholder="" ng-model="vocabolo_filter" ng-change="search()">
       </label>
     </ion-header-bar>
   
     <!-- Questa è il contenuto degli item-->
     <ion-content>
       <ion-list>
-        <!-- Qui c'è l'item divider-->
+        <!-- Qui c'è l'item divider - Aleph
         <div class="item item-divider">
           א - aleph
-        </div>
-        <!-- Qui c'è l'elenco degli items-->
-        <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="vocabolo in vocaboli" type="item-text-wrap" href="#/tab/vocaboli/{{vocabolo.id}}">
-          <!-- <img ng-src="{{vocabolo.face}}"> -->
+        </div>-->
+        
+        <!-- Qui c'è l'elenco degli items
+        Nota che: la funzione che fa da filtro ai vocaboli si trova in "ng-repeat=" ed è questa " | filter:vocabolo_filter".
+        Essa è collegata a ng-model="vocabolo_filter" di input della barra di ricerca
+      -->
+
+        <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="vocabolo in vocaboli | filter:vocabolo_filter" type="item-text-wrap" href="#/tab/vocaboli/{{vocabolo.id}}">
           <h2 align="right">{{vocabolo.termine}}</h2>
           <p>{{vocabolo.traslitterazione}}</p>
           <i class="icon ion-chevron-right icon-accessory"></i>
@@ -26,6 +30,7 @@
             Delete
           </ion-option-button>
         </ion-item>
+
       </ion-list>
     </ion-content>
     
