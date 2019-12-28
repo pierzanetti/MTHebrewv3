@@ -29,7 +29,7 @@ angular.module('starter.termini', [])
 { key: '	aissah	', termine: '	אִשָּׁה	', senza: '	אשה	', traslitterazione: '	’iššāh	', significato: '	donna, moglie, femmina	', grammatica: '	n. f.	', altro: '	cstr. אֵשֶׁת - pl. ass. נָשִׁים - cstr. נְשֵׁי	', id: 	20	},
 
 /*Qui inizia Bet*/
-{ key: '	b	', termine: '		', senza: '		', traslitterazione: '		', significato: '		', grammatica: '		', altro: '		', id: 	99	},
+{ key: '	b	', termine: '		', senza: '		', traslitterazione: '		', significato: '		', grammatica: '		', altro: '		', id: 	199	},
 { key: '	beth	', termine: '	ב	', senza: '	ב	', traslitterazione: '	ḇ	', significato: '	beth	', grammatica: '		', altro: '		', id: 	100	},
 { key: '	beged	', termine: '	בֶּ֫גֶד	', senza: '	בגד	', traslitterazione: '	beḡeḏ	', significato: '	indumento, mantello	', grammatica: '	n. m.	', altro: '	pl. בְּגָדִים - cstr. בִּגְדֵי	', id: 	101	},
 { key: '	boa	', termine: '	בּוֹא	', senza: '	בוא	', traslitterazione: '	bô’	', significato: '	venire, entrare, andare	', grammatica: '	v.	', altro: '	בָּא Qal, qatal, 3 ms, entrò, venne, andò	', id: 	102	},
