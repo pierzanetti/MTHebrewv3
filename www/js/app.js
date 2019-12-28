@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'starter.termini'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'starter.termini', 'starter.reg-fonetica'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -83,6 +83,39 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         'tab-dizionario': {
           templateUrl: 'templates/dizionario/vocabolo-detail.html',
           controller: 'VocaboloDetailCtrl'
+        }
+      }
+    })
+
+// questo è il tab della sintassi
+  .state('tab.sintassi', {
+    url: '/sintassi',
+    views: {
+      'tab-sintassi': {
+        templateUrl: 'templates/tab-sintassi.html',
+        controller: 'SintassiCtrl'
+      }
+    }
+  })
+
+// Così vocaboli ha il proprio tab-fonetiche
+  .state('tab.fonetiche', {
+      url: '/fonetiche',
+      views: {
+       'tab-sintassi': {
+          templateUrl: 'templates/sintassi/tab-fonetiche.html',
+         controller: 'FoneticheCtrl'
+        }
+      }
+   })
+
+   // Questo è la schermada dei dettagli di fonetica, è posta sotto il tab-sintassi
+    .state('tab.fonetica-detail', {
+      url: '/fonetiche/:foneticaId',
+      views: {
+        'tab-sintassi': {
+          templateUrl: 'templates/sintassi/fonetica-detail.html',
+          controller: 'FoneticaDetailCtrl'
         }
       }
     })

@@ -1,0 +1,37 @@
+<ion-view view-title="Fonetica" id="Fonetiche">
+
+    <!-- Questa è la barra di ricerca-->
+    <ion-header-bar class="bar-subheader bar-stable item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="" ng-model="fonetica_filter" ng-change="search()">
+      </label>
+    </ion-header-bar>
+  
+    <!-- Questa è il contenuto degli item-->
+    <ion-content>
+      <ion-list>
+        <!-- Qui c'è l'item divider - Aleph 
+        <div class="item item-divider">
+          א - aleph
+        </div> -->
+        
+        <!-- Qui c'è l'elenco degli items
+        Nota che: la funzione che fa da filtro ai vocaboli si trova in "ng-repeat=" ed è questa " | filter:fonetica_filter".
+        Essa è collegata a ng-model="fonetica_filter" di input della barra di ricerca
+      -->
+
+        <ion-item class="item-remove-animate item-icon-right" ng-repeat="fonetica in fonetiche | filter:fonetica_filter" type="item-text-wrap" href="#/tab/fonetiche/{{fonetica.id}}">
+          <h2 align="right">{{fonetica.termine}}</h2>
+          <p>{{fonetica.traslitterazione}} - {{fonetica.significato}}</p>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+  
+          <ion-option-button class="button-assertive" ng-click="remove(fonetica)">
+            Delete
+          </ion-option-button>
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+    
+  </ion-view>

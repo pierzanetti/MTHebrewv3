@@ -1,7 +1,7 @@
 {
   "name": "starter",
   "version": "0.0.1",
-  "description": "An Ionic project",
+  "description": "An Ionic project of Masoretic Text",
   "devDependencies": {
     "@ionic/v1-toolkit": "1.0.22",
     "gulp": "^3.5.6",

@@ -1,0 +1,32 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{fonetica.termine}}">
+  <ion-content class="padding">
+    
+    <h2 align="right">{{fonetica.termine}}</h2>
+    <h3>{{fonetica.traslitterazione}}</h3>
+    <h2>{{fonetica.significato}}</h2>
+    <br>
+    <h3>{{fonetica.grammatica}}</h3>
+    <br>
+    <h4>{{fonetica.altro}}</h4>
+
+  </ion-content>
+</ion-view>
+
+
+
+<!-- Questa esa la riga che funzionava bene
+    <h2 align="right" id="aintutorial-heading1" style="color:#000000;">{{fonetica.termine}}</h2>
+    <h3 id="aintutorial-heading2" style="color:#000000;font-weight:300;font-style:italic;">{{fonetica.traslitterazione}}</h3>
+    <h2 id="aintutorial-heading3" style="color:#000000;font-weight:400;">{{fonetica.significato}}</h2>
+    <br>
+    <h3 id="aintutorial-heading4" style="color:#000000;font-weight:400;">{{fonetica.grammatica}}</h3>
+    <br>
+    <h4 id="aintutorial-heading5" style="color:#000000;font-weight:400;">{{fonetica.altro}}</h4>
+    
+-->
