@@ -5,8 +5,9 @@ angular.module('starter.termini', [])
 
   // Some fake testing data
   var vocaboli_list = [
-    /*Qui inizia Alef*/
-    {key: '	alef	', termine: '	א	', senza: '	א	', traslitterazione: '	’	', significato: '	’àlef	', grammatica: '		', altro: '		', id: 	1	},
+
+/*Qui inizia Alef*/
+{ key: '	alef	', termine: '	א	', senza: '	א	', traslitterazione: '	’	', significato: '	’àlef	', grammatica: '		', altro: '		', id: 	1	},
 { key: '	ab	', termine: '	אָב	', senza: '	אב	', traslitterazione: '	’āḇ	', significato: '	padre	', grammatica: '	n. m.	', altro: '	cstr. אַב - pl. m. אָבוֹת - cstr. אֲבוֹת	', id: 	2	},
 { key: '	adamah	', termine: '	אֲדָמָה	', senza: '	אדמה	', traslitterazione: '	’aḏāmāh	', significato: '	suolo, terra (in contrasto con l’acqua), territorio, argilla	', grammatica: '	n. f.	', altro: '	cstr. אַדְמַת - pl. אֲדָמוֹת	', id: 	3	},
 { key: '	or	', termine: '	אוֹר	', senza: '	אור	', traslitterazione: '	’ôr	', significato: '	luce	', grammatica: '	n. f.	', altro: '	cstr. אוֹר - pl. ass. אוֹרִים	', id: 	4	},
@@ -28,7 +29,7 @@ angular.module('starter.termini', [])
 { key: '	aissah	', termine: '	אִשָּׁה	', senza: '	אשה	', traslitterazione: '	’iššāh	', significato: '	donna, moglie, femmina	', grammatica: '	n. f.	', altro: '	cstr. אֵשֶׁת - pl. ass. נָשִׁים - cstr. נְשֵׁי	', id: 	20	},
 
 /*Qui inizia Bet*/
-{ key: '		', termine: '		', senza: '		', traslitterazione: '		', significato: '		', grammatica: '		', altro: '		', id: 	99	},
+{ key: '	b	', termine: '		', senza: '		', traslitterazione: '		', significato: '		', grammatica: '		', altro: '		', id: 	99	},
 { key: '	beth	', termine: '	ב	', senza: '	ב	', traslitterazione: '	ḇ	', significato: '	beth	', grammatica: '		', altro: '		', id: 	100	},
 { key: '	beged	', termine: '	בֶּ֫גֶד	', senza: '	בגד	', traslitterazione: '	beḡeḏ	', significato: '	indumento, mantello	', grammatica: '	n. m.	', altro: '	pl. בְּגָדִים - cstr. בִּגְדֵי	', id: 	101	},
 { key: '	boa	', termine: '	בּוֹא	', senza: '	בוא	', traslitterazione: '	bô’	', significato: '	venire, entrare, andare	', grammatica: '	v.	', altro: '	בָּא Qal, qatal, 3 ms, entrò, venne, andò	', id: 	102	},
@@ -39,71 +40,6 @@ angular.module('starter.termini', [])
 { key: '	barah	', termine: '	בָּרַח	', senza: '	ברח	', traslitterazione: '	bāraḥ	', significato: '	fuggire, scappare	', grammatica: '	v.	', altro: '	Qal, qatal, 3 ms, fuggì, scappò; 	', id: 	107	},
 { key: '	betulah	', termine: '	בְּתוּלָה	', senza: '	בתולה	', traslitterazione: '	beṯûlāh	', significato: '	vergine	', grammatica: '	n. f.	', altro: '	cstr. בְּתוּלַת - pl. f. בְּתוּלוֹת	', id: 	108	}
 
-
-    /*id: 0,
-    termine: '	א	',
-    senza: '	א	',
-    traslitterazione: '	’	',
-    key: '	a	',
-    significato: '	’àlef	',
-    grammatica: '		',
-    altro: '		'
-  }, {
-    id: 1,
-    termine: '	אָב	',
-    senza: '	אב	',
-    traslitterazione: '	’āḇ	',
-    key: '	ab	',
-    significato: '	padre	',
-    grammatica: '	n. m.	',
-    altro: '	cstr. אַב - pl. m. אָבוֹת - cstr. אֲבוֹת	',
-  }, {
-    id: 2,
-    termine: '	אֲדָמָה	',
-    senza: '	אדמה	',
-    traslitterazione: '	’aḏāmāh	',
-    key: '	adamah	',
-    significato: '	suolo, terra (in contrasto con l’acqua), territorio, argilla	',
-    grammatica: '	n. f.	',
-    altro: '	cstr. אַדְמַת - pl. אֲדָמוֹת	'
-  }, {
-    id: 3,
-    termine: '	אוֹר	',
-    senza: '	אור	',
-    traslitterazione: '	’ôr	',
-    key: '	or	',
-    significato: '	luce	',
-    grammatica: '	n. f.	',
-    altro: '	cstr. אוֹר - pl. ass. אוֹרִים	',
-    id: '	4	'
-  }, {
-    id: 4,
-    termine: '	אוֹת	',
-    senza: '	אות	',
-    traslitterazione: '	’ôṯ	',
-    key: '	ot	',
-    significato: '	segno	',
-    grammatica: '	n. m.	',
-    altro: '	pl. ass. אוֹתוֹת	'
-  }, {
-    id: 5,
-    termine: '	אָח	',
-    senza: '	אח	',
-    traslitterazione: '	’āḥ	',
-    key: '	ah	',
-    significato: '	fratello	',
-    grammatica: '	n. m.	',
-    altro: '	cstr. אֲחִי - pl. m. אַחִים - cstr. אֲחֵי	'
-  }, {
-    id: 6,
-    key: '	ehad	',
-    termine: '	אֶחָד	',
-    senza: '	אחד	',
-    traslitterazione: '	’eḥāḏ	',
-    significato: '	uno	',
-    grammatica: '	agg. numerale	',
-    altro: '	cstr. אַחַד	'
-  }*/
 ];
 
   return {
