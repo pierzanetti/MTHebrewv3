@@ -70,7 +70,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       url: '/vocaboli',
       views: {
        'tab-dizionario': {
-          templateUrl: 'templates/tab-vocaboli.html',
+          templateUrl: 'templates/dizionario/tab-vocaboli.html',
          controller: 'VocaboliCtrl'
         }
       }
@@ -81,7 +81,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       url: '/vocaboli/:vocaboloId',
       views: {
         'tab-dizionario': {
-          templateUrl: 'templates/vocabolo-detail.html',
+          templateUrl: 'templates/dizionario/vocabolo-detail.html',
           controller: 'VocaboloDetailCtrl'
         }
       }
