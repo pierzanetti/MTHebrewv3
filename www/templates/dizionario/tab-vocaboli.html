@@ -11,17 +11,17 @@
     <!-- Questa è il contenuto degli item-->
     <ion-content>
       <ion-list>
-        <!-- Qui c'è l'item divider - Aleph -->
+        <!-- Qui c'è l'item divider - Aleph 
         <div class="item item-divider">
           א - aleph
-        </div>
+        </div> -->
         
         <!-- Qui c'è l'elenco degli items
         Nota che: la funzione che fa da filtro ai vocaboli si trova in "ng-repeat=" ed è questa " | filter:vocabolo_filter".
         Essa è collegata a ng-model="vocabolo_filter" di input della barra di ricerca
       -->
 
-        <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="vocabolo in vocaboli | filter:vocabolo_filter" type="item-text-wrap" href="#/tab/vocaboli/{{vocabolo.id}}">
+        <ion-item class="item-remove-animate item-icon-right" ng-repeat="vocabolo in vocaboli | filter:vocabolo_filter" type="item-text-wrap" href="#/tab/vocaboli/{{vocabolo.id}}">
           <h2 align="right">{{vocabolo.termine}}</h2>
           <p>{{vocabolo.traslitterazione}} - {{vocabolo.significato}}</p>
           <i class="icon ion-chevron-right icon-accessory"></i>
