@@ -54,7 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   })
 
-// questo è il tab del dizionario
+/* questo è il tab del dizionario
   .state('tab.dizionario', {
     url: '/dizionario',
     views: {
@@ -63,29 +63,31 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         controller: 'DizionarioCtrl'
       }
     }
-  })
+  }) */
 
 // Così vocaboli ha il proprio tab-vocaboli
   .state('tab.vocaboli', {
       url: '/vocaboli',
       views: {
-       'tab-dizionario': {
+       'tab-vocaboli': {
           templateUrl: 'templates/dizionario/tab-vocaboli.html',
          controller: 'VocaboliCtrl'
         }
       }
    })
 
+
 // Questo è la schermada dei dettagli dei vocaboli, è posta sotto il tab-vocaboli
     .state('tab.vocabolo-detail', {
       url: '/vocaboli/:vocaboloId',
       views: {
-        'tab-dizionario': {
+        'tab-vocaboli': {
           templateUrl: 'templates/dizionario/vocabolo-detail.html',
           controller: 'VocaboloDetailCtrl'
         }
       }
     })
+
 
 // questo è il tab della sintassi
   .state('tab.sintassi', {

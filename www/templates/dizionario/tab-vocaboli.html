@@ -1,4 +1,4 @@
-<ion-view view-title="Vocaboli" id="Vocaboli">
+<ion-view view-title="Vocaboli">
 
     <!-- Questa è la barra di ricerca-->
     <ion-header-bar class="bar-subheader bar-stable item-input-inset">
@@ -11,25 +11,92 @@
     <!-- Questa è il contenuto degli item-->
     <ion-content>
       <ion-list>
-        <!-- Qui c'è l'item divider - Aleph 
+
+        <!-- Qui c'è l'item divider - Aleph  -->
         <div class="item item-divider">
           א - aleph
-        </div> -->
+        </div>
         
         <!-- Qui c'è l'elenco degli items
-        Nota che: la funzione che fa da filtro ai vocaboli si trova in "ng-repeat=" ed è questa " | filter:vocabolo_filter".
+        Nota che: la funzione che fa da filtro ai vocaboli si trova in "ng-repeat=" ed è questa " | filter:vocabolo_filter | filter: { lettera: ''}".
         Essa è collegata a ng-model="vocabolo_filter" di input della barra di ricerca
       -->
 
-        <ion-item class="item-remove-animate item-icon-right" ng-repeat="vocabolo in vocaboli | filter:vocabolo_filter" type="item-text-wrap" href="#/tab/vocaboli/{{vocabolo.id}}">
+        <ion-item class="item-remove-animate item-icon-right" ng-repeat="vocabolo in vocaboli | filter: vocabolo_filter | filter: { lettera: 'א'}" type="item-text-wrap" href="#/tab/vocaboli/{{vocabolo.id}}">
           <h2 align="right">{{vocabolo.termine}}</h2>
           <p>{{vocabolo.traslitterazione}} - {{vocabolo.significato}}</p>
           <i class="icon ion-chevron-right icon-accessory"></i>
-  
+
           <ion-option-button class="button-assertive" ng-click="remove(vocabolo)">
             Delete
           </ion-option-button>
         </ion-item>
+
+
+         <!-- Qui c'è l'item divider - Beth  -->
+         <div class="item item-divider">
+          ב - beth
+         </div>
+
+        <ion-item class="item-remove-animate item-icon-right" ng-repeat="vocabolo in vocaboli | filter: vocabolo_filter | filter: { lettera: 'ב'}" type="item-text-wrap" href="#/tab/vocaboli/{{vocabolo.id}}">
+          <h2 align="right">{{vocabolo.termine}}</h2>
+          <p>{{vocabolo.traslitterazione}} - {{vocabolo.significato}}</p>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+
+          <ion-option-button class="button-assertive" ng-click="remove(vocabolo)">
+            Delete
+          </ion-option-button>
+        </ion-item>
+        
+        <!-- Qui c'è l'item divider - Ghimel  -->
+        <div class="item item-divider">
+          ג - Ghimel
+         </div>
+
+        <ion-item class="item-remove-animate item-icon-right" ng-repeat="vocabolo in vocaboli | filter: vocabolo_filter | filter: { lettera: 'ג'}" type="item-text-wrap" href="#/tab/vocaboli/{{vocabolo.id}}">
+          <h2 align="right">{{vocabolo.termine}}</h2>
+          <p>{{vocabolo.traslitterazione}} - {{vocabolo.significato}}</p>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+
+          <ion-option-button class="button-assertive" ng-click="remove(vocabolo)">
+            Delete
+          </ion-option-button>
+        </ion-item>
+
+        <!-- Qui c'è l'item divider - Daleth  -->
+        <div class="item item-divider">
+          ד - Daleth
+         </div>
+
+        <ion-item class="item-remove-animate item-icon-right" ng-repeat="vocabolo in vocaboli | filter: vocabolo_filter | filter: { lettera: 'ד'}" type="item-text-wrap" href="#/tab/vocaboli/{{vocabolo.id}}">
+          <h2 align="right">{{vocabolo.termine}}</h2>
+          <p>{{vocabolo.traslitterazione}} - {{vocabolo.significato}}</p>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+
+          <ion-option-button class="button-assertive" ng-click="remove(vocabolo)">
+            Delete
+          </ion-option-button>
+        </ion-item>
+
+        <!-- Qui c'è l'item divider - He  -->
+        <div class="item item-divider">
+          ה - He
+         </div>
+
+        <ion-item class="item-remove-animate item-icon-right" ng-repeat="vocabolo in vocaboli | filter: vocabolo_filter | filter: { lettera: 'ה'}" type="item-text-wrap" href="#/tab/vocaboli/{{vocabolo.id}}">
+          <h2 align="right">{{vocabolo.termine}}</h2>
+          <p>{{vocabolo.traslitterazione}} - {{vocabolo.significato}}</p>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+
+          <ion-option-button class="button-assertive" ng-click="remove(vocabolo)">
+            Delete
+          </ion-option-button>
+        </ion-item>
+
+
+
+
+
 
       </ion-list>
     </ion-content>

@@ -2,7 +2,7 @@ angular.module('starter.controllers', [])
 
 .controller('HomeCtrl', function($scope) {})
 
-.controller('DizionarioCtrl', function($scope) {})
+//.controller('DizionarioCtrl', function($scope) {})
 
 .controller('VocaboliCtrl', function($scope, Vocaboli) {
   // With the new view caching in Ionic, Controllers are only called
@@ -14,30 +14,6 @@ angular.module('starter.controllers', [])
   //});
 
   $scope.vocaboli = Vocaboli.all();
-  
-  /*
-  $scope.data = {
-    search: ''
-  }
-
-  $scope.search = function(){
-                      
-    var s = $scope.data.search.toLowerCase();
-    
-    if (s == ''){
-        $scope.vocaboli = Vocaboli.list;
-        return;
-    }
-    
-    $scope.vocaboli = Vocaboli.list.filter(function(vocabolo){
-      if (vocabolo.key.toLowerCase().indexOf(s) > -1 || vocabolo.termine.toLowerCase().indexOf(s) > -1 || vocabolo.senza.toLowerCase().indexOf(s) > -1 || vocabolo.traslitterazione.toLowerCase().indexOf(s) > -1){
-          return true;
-      } 
-      return false;
-    });
-  }
-  */
-
   $scope.remove = function(vocabolo) {
     Vocaboli.remove(vocabolo);
   };
